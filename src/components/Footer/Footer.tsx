@@ -5,9 +5,11 @@ import { Logo } from "../Logo/Logo";
 
 export const Footer = () => {
   return (
-    <footer className={styles["footer-cont"]}>
-      <MainContainer>
-        <Logo name="Coffee Hub" icon="./src/assets/coffee-cup.png"></Logo>
+    <footer>
+      <MainContainer className={styles.content}>
+        <div className={styles["footer-cont"]}>
+          <Logo name="Coffee Hub" icon="./src/assets/coffee-cup.png"></Logo>
+        </div>
       </MainContainer>
     </footer>
   );

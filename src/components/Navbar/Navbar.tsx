@@ -7,7 +7,7 @@ export const Navbar = () => {
   return (
     <nav>
       <MainContainer className={styles.content}>
-        <Logo name="Coffee Hub" icon="./src/assets/coffee-cup.png"></Logo>
+        <Logo name="Coffee Hub" icon="./src/assets/coffee-cup.png" />
         <div className={styles.navContent}>
           <a href="/#" className={styles.link}>
             Home

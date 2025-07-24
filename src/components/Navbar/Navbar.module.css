@@ -7,7 +7,6 @@ nav {
 }
 
 .content {
-  /* this is for responsiveness for bigger screen it's gonna be limited to 1200px */
   display: flex;
   align-items: center;
   justify-content: space-between;

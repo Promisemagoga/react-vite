@@ -3,9 +3,12 @@ footer {
   bottom: 0;
   background-color: #6f4e37;
   width: 100vw;
-  height: 100px;
+  height: 60px;
 }
 
-.footer-cont {
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin: auto;
 }
