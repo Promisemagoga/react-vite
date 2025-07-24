@@ -1,0 +1,39 @@
+nav {
+  position: fixed;
+  top: 0;
+  background-color: #6f4e37;
+  width: 100vw;
+  height: 60px;
+}
+
+.content {
+  /* this is for responsiveness for bigger screen it's gonna be limited to 1200px */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.navContent {
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.profile-icon {
+  background-color: #fff;
+  font-weight: bolder;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #6f4e37;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
