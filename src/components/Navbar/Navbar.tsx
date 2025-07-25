@@ -3,6 +3,7 @@ import { Text } from "../Text/Text";
 import { MainContainer } from "../../MainContainer";
 import { Logo } from "../Logo/Logo";
 import { PageContainer } from "../../PageContainer";
+import { NavLink } from "react-router";
 export const Navbar = () => {
   return (
     <nav>
@@ -10,15 +11,18 @@ export const Navbar = () => {
         <div className={styles.content}>
           <Logo name="Coffee Hub" icon="./src/assets/coffee-cup.png" />
           <div className={styles.navContent}>
-            <a href="/#" className={styles.link}>
+            <NavLink to={"/"} className={styles.link}>
               Home
-            </a>
-            <a href="/#" className={styles.link}>
+            </NavLink>
+            <NavLink to={"/About"} className={styles.link}>
               About
-            </a>
-            <a href="/#" className={styles.link}>
+            </NavLink>
+            <NavLink to={"/Contact"} className={styles.link}>
               Contact
-            </a>
+            </NavLink>
+            <NavLink to={"*"} className={styles.link}>
+              Product
+            </NavLink>
             <div className={styles["profile-icon"]}>
               <Text variant="span">U</Text>
             </div>
