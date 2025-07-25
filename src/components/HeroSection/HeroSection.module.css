@@ -1,9 +1,17 @@
 .hero-section {
   display: flex;
   flex-direction: row;
-  padding: 20px;
   align-items: center;
   column-gap: 100px;
+}
+
+.section-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 30px 30px 60px 30px;
+  background-color: burlywood;
+  height: 70vh;
+  border-radius: 10px;
 }
 
 .hero-image {
@@ -24,4 +32,30 @@
   font-size: small;
   font-style: italic;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media (min-width: 761px) and (max-width: 900px) {
+  .hero-section {
+    column-gap: 50px;
+  }
+
+  .hero-image {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 761px) {
+  .hero-section {
+    column-gap: 30px;
+  }
+
+  .hero-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .section-content p {
+    width: 250px;
+  }
 }

@@ -9,7 +9,7 @@ type Props = {
 };
 export const HeroSection = ({ img, subtitle, description }: Props) => {
   return (
-    <MainContainer>
+    <div className={styles["section-wrapper"]}>
       <div className={styles["hero-section"]}>
         <div className={styles["hero-image-side"]}>
           <img src={img} className={styles["hero-image"]} />
@@ -20,6 +20,6 @@ export const HeroSection = ({ img, subtitle, description }: Props) => {
           <p>{description}</p>
         </div>
       </div>
-    </MainContainer>
+    </div>
   );
 };

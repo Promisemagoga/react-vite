@@ -1,16 +1,16 @@
 nav {
   position: fixed;
   top: 0;
-  background-color: #6f4e37;
-  width: 100vw;
+  background-color: hsl(25, 34%, 33%);
   height: 60px;
+  width: 100%;
+  z-index: 1000;
 }
 
 .content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: auto;
 }
 
 .navContent {

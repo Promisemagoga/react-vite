@@ -4,11 +4,14 @@ type Props = {
   children: React.ReactNode;
 };
 
-export const MainContainer = ({ children }: Props) => {
+export const PageContainer = ({ children }: Props) => {
   return (
     <div
       style={{
-        minHeight: "100vh",
+        maxWidth: "1200px",
+        margin: "0 auto",
+        width: "100%",
+        flex: 1,
         display: "flex",
         flexDirection: "column",
       }}
