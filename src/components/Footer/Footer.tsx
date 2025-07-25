@@ -1,4 +1,3 @@
-import React from "react";
 import { MainContainer } from "../../MainContainer";
 import styles from "./Footer.module.css";
 import { Logo } from "../Logo/Logo";

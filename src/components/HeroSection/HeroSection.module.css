@@ -1,0 +1,27 @@
+.hero-section {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  align-items: center;
+  column-gap: 100px;
+}
+
+.hero-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.section-content p {
+  width: 300px;
+  font-size: small;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: whitesmoke;
+}
+
+.section-content h3 {
+  color: #6f4e37;
+  font-size: small;
+  font-style: italic;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

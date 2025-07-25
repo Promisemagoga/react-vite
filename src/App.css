@@ -5,6 +5,15 @@
   padding-bottom: 100px;
 }
 
-#scrollable {
+/* #scrollable {
   padding-top: 60px;
+} */
+
+.section {
+  width: 100vw;
+  background-color: burlywood;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
