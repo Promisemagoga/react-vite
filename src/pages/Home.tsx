@@ -1,19 +1,16 @@
 import { HeroSection } from "../components/HeroSection/HeroSection";
 import { Products } from "../components/Products/Products";
-import {
-  Searchbar,
-  type SearchbarProps,
-} from "../components/Searchbar/Searchbar";
+import { Searchbar } from "../components/Searchbar/Searchbar";
 import { MainContainer } from "../MainContainer";
 import { PageContainer } from "../PageContainer";
 import "../App.css";
 
-export const Home = ({ ref }: SearchbarProps) => {
+export const Home = () => {
   return (
     <MainContainer>
       <div className="content">
         <PageContainer>
-          <Searchbar ref={ref} />
+          <Searchbar />
           <HeroSection
             img="/src/assets/americano.jpg"
             subtitle="Where Great Ideas Begin with Great Coffee"

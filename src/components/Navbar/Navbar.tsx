@@ -20,12 +20,12 @@ export const Navbar = () => {
             <NavLink to={"/Contact"} className={styles.link}>
               Contact
             </NavLink>
-            <NavLink to={"*"} className={styles.link}>
+            {/* <NavLink to={"*"} className={styles.link}>
               Product
-            </NavLink>
-            <div className={styles["profile-icon"]}>
+            </NavLink> */}
+            {/* <div className={styles["profile-icon"]}>
               <Text variant="span">U</Text>
-            </div>
+            </div> */}
           </div>
         </div>
       </PageContainer>

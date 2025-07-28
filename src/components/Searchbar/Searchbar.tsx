@@ -1,18 +1,22 @@
-import { useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./Searchbar.module.css";
+import { useSearchParams } from "react-router";
 
-export type SearchbarProps = {
-  ref: React.RefObject<HTMLInputElement | null>;
-  // onSearch: React.MouseEventHandler<HTMLImageElement>;
-};
-
-export const Searchbar = ({ ref }: SearchbarProps) => {
+export const Searchbar = () => {
   const [text, setText] = useState("");
-  const searchRef = useRef<HTMLInputElement>(null);
 
-  function handleSearch() {
-    console.log(searchRef.current?.value);
-  }
+  const [searchParams, setSearchParams] = useSearchParams();
+
+  useEffect(() => {
+    const initialQuery = searchParams.get("query") || "";
+    setText(initialQuery);
+  }, [searchParams]);
+
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    console.log("Searching for:", text);
+    setSearchParams({ query: text });
+  };
 
   return (
     <div className={styles["search-wrapper"]}>
@@ -21,8 +25,8 @@ export const Searchbar = ({ ref }: SearchbarProps) => {
           type="text"
           placeholder="Search..."
           className={styles.Searchbar}
-          // onChange={(event) => setText(event?.target.value)}
-          ref={searchRef}
+          value={text}
+          onChange={(e) => setText(e.target.value)}
         />
         <img
           src="./src/assets/search.png"

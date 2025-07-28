@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./Products.module.css";
+import { useSearchParams } from "react-router";
 
 type Props = {
   id: number;
@@ -9,6 +10,7 @@ type Props = {
 };
 
 export const Products = () => {
+  const [searchParams] = useSearchParams();
   const [Products, setProducts] = useState<Props[]>([
     {
       id: 1,
@@ -48,15 +50,37 @@ export const Products = () => {
     },
   ]);
 
+  const [filtered, setFiltered] = useState<Props[]>(Products);
+
+  useEffect(() => {
+    const query = searchParams.get("query")?.toLowerCase() || "";
+
+    if (query) {
+      const result = Products.filter(
+        (product) =>
+          product.name.toLowerCase().includes(query) ||
+          product.id.toString() === query ||
+          product.price.toString() === query
+      );
+      setFiltered(result);
+    } else {
+      setFiltered(Products);
+    }
+  }, [searchParams]);
+
   return (
     <div className={styles["coffee-grid"]}>
-      {Products.map((data) => (
-        <div key={data.id} className={styles.card}>
-          <img src={data.img} />
-          <h2>{data.name}</h2>
-          <h3>R{data.price}</h3>
-        </div>
-      ))}
+      {filtered.length > 0 ? (
+        filtered.map((data, index) => (
+          <div key={index} className={styles.card}>
+            <img src={data.img} />
+            <h2>{data.name}</h2>
+            <h3>R{data.price}</h3>
+          </div>
+        ))
+      ) : (
+        <p>No matching products found</p>
+      )}
     </div>
   );
 };

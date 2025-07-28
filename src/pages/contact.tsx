@@ -1,5 +1,21 @@
 import React from "react";
+import { HeroSection } from "../components/HeroSection/HeroSection";
+import { MainContainer } from "../MainContainer";
+import { PageContainer } from "../PageContainer";
 
 export const Contact = () => {
-  return <div>contact</div>;
+  return (
+    <MainContainer>
+      <PageContainer>
+        <div style={{ marginTop: "100px" }}>
+          <HeroSection
+            img="/src/assets/smartphone.png"
+            imageStyle={{ borderRadius: 0 }}
+            subtitle="Give us a call"
+            description="012 345 6789"
+          />
+        </div>
+      </PageContainer>
+    </MainContainer>
+  );
 };

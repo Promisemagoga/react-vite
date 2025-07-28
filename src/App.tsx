@@ -9,9 +9,9 @@ import { Products } from "./components/Products/Products";
 import { Routes } from "react-router";
 import { Route } from "react-router";
 import { NotFound } from "./pages/NotFound";
-import Home from "./pages/Home";
 import { About } from "./pages/About";
-import { Contact } from "./pages/contact";
+import { Home } from "./pages/Home";
+import { Contact } from "./pages/Contact";
 
 function App() {
   return (
