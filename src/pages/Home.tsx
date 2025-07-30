@@ -1,6 +1,6 @@
-import { HeroSection } from "../components/HeroSection/HeroSection";
-import { Products } from "../components/Products/Products";
-import { Searchbar } from "../components/Searchbar/Searchbar";
+import { HeroSection } from "../Components/HeroSection/HeroSection";
+import { Products } from "../Components/Products/Products";
+import { Searchbar } from "../Components/Searchbar/Searchbar";
 import { MainContainer } from "../MainContainer";
 import { PageContainer } from "../PageContainer";
 import "../App.css";

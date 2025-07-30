@@ -1,13 +1,13 @@
 import "./App.css";
-import { Navbar } from "./components/Navbar/Navbar";
-import { Footer } from "./components/Footer/Footer";
+import { Navbar } from "./Components/Navbar/Navbar";
+import { Footer } from "./Components/Footer/Footer";
 import { MainContainer } from "./MainContainer";
 import { Routes } from "react-router";
 import { Route } from "react-router";
-import { NotFound } from "./pages/NotFound";
-import { About } from "./pages/About";
-import { Home } from "./pages/Home";
-import { Contact } from "./pages/Contact";
+import { NotFound } from "./Pages/NotFound";
+import { About } from "./Pages/About";
+import { Home } from "./Pages/Home";
+import { Contact } from "./Pages/Contact";
 
 function App() {
   return (

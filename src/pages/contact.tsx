@@ -1,4 +1,4 @@
-import { HeroSection } from "../components/HeroSection/HeroSection";
+import { HeroSection } from "../Components/HeroSection/HeroSection";
 import { MainContainer } from "../MainContainer";
 import { PageContainer } from "../PageContainer";
 
