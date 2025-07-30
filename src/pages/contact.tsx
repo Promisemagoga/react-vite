@@ -1,6 +1,6 @@
-import { HeroSection } from "../components/HeroSection/HeroSection";
 import { MainContainer } from "../MainContainer";
 import { PageContainer } from "../PageContainer";
+import { HeroSection } from "../components/HeroSection/HeroSection";
 
 export const Contact = () => {
   return (
