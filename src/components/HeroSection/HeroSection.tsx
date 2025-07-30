@@ -1,4 +1,3 @@
-import { MainContainer } from "../../MainContainer";
 import { Logo } from "../Logo/Logo";
 import styles from "./HeroSection.module.css";
 

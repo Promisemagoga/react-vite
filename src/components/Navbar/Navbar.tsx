@@ -1,6 +1,4 @@
 import styles from "./Navbar.module.css";
-import { Text } from "../Text/Text";
-import { MainContainer } from "../../MainContainer";
 import { Logo } from "../Logo/Logo";
 import { PageContainer } from "../../PageContainer";
 import { NavLink } from "react-router";
