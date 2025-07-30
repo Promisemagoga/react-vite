@@ -9,7 +9,7 @@ export const Footer = () => {
       <PageContainer>
         <div className={styles.content}>
           <div className={styles["footer-cont"]}>
-            <Logo name="Coffee Hub" icon="./src/assets/coffee-cup.png"></Logo>
+            <Logo name="Coffee Hub" icon="/assets/coffee-cup.png"></Logo>
           </div>
         </div>
       </PageContainer>

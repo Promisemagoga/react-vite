@@ -7,7 +7,7 @@ export const Navbar = () => {
     <nav>
       <PageContainer>
         <div className={styles.content}>
-          <Logo name="Coffee Hub" icon="./src/assets/coffee-cup.png" />
+          <Logo name="Coffee Hub" icon="./assets/coffee-cup.png" />
           <div className={styles.navContent}>
             <NavLink to={"/"} className={styles.link}>
               Home

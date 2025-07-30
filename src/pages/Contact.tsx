@@ -9,7 +9,7 @@ export const Contact = () => {
       <PageContainer>
         <div style={{ marginTop: "100px" }}>
           <HeroSection
-            img="/src/assets/smartphone.png"
+            img="/assets/smartphone.png"
             imageStyle={{ borderRadius: 0 }}
             subtitle="Give us a call"
             description="012 345 6789"

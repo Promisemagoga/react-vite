@@ -20,7 +20,7 @@ export const HeroSection = ({
           <img src={img} style={imageStyle} className={styles["hero-image"]} />
         </div>
         <div className={styles["section-content"]}>
-          <Logo name="Coffee Hub" icon="./src/assets/coffee-cup.png"></Logo>
+          <Logo name="Coffee Hub" icon="/assets/coffee-cup.png"></Logo>
           <h3>{subtitle}</h3>
           <p>{description}</p>
         </div>

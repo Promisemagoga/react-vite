@@ -12,7 +12,7 @@ export const Home = () => {
         <PageContainer>
           <Searchbar />
           <HeroSection
-            img="/src/assets/americano.jpg"
+            img="/assets/americano.jpg"
             subtitle="Where Great Ideas Begin with Great Coffee"
             description="At Coffee Hub, we’re more than just a place to grab a cup of coffee — we’re your daily escape. Whether you’re starting your morning, meeting with friends, or settling in with your laptop, our warm atmosphere and handcrafted brews make every visit feel just right. From rich espressos and creamy lattes to fresh pastries and cozy corners, we’re here to serve comfort in every cup."
           />

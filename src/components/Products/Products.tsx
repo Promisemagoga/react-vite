@@ -14,37 +14,37 @@ export const Products = () => {
   const [Products, setProducts] = useState<Props[]>([
     {
       id: 1,
-      img: "./src/assets/Black-coffe.jpg",
+      img: "/assets/Black-coffe.jpg",
       name: "Black Coffe",
       price: 15,
     },
     {
       id: 2,
-      img: "./src/assets/americano.jpg",
+      img: "/assets/americano.jpg",
       name: "Americano",
       price: 18,
     },
     {
       id: 3,
-      img: "./src/assets/cuppacino.jpg",
+      img: "/assets/cuppacino.jpg",
       name: "Cappuccino",
       price: 22,
     },
     {
       id: 4,
-      img: "./src/assets/flat-white.jpg",
+      img: "/assets/flat-white.jpg",
       name: "Flat White",
       price: 24,
     },
     {
       id: 5,
-      img: "./src/assets/hot-chocolate.jpg",
+      img: "/assets/hot-chocolate.jpg",
       name: "Hot Chocolate",
       price: 25,
     },
     {
       id: 3,
-      img: "./src/assets/latte.jpg",
+      img: "/assets/latte.jpg",
       name: "Latte",
       price: 24,
     },

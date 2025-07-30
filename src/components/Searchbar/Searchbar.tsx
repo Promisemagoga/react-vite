@@ -29,7 +29,7 @@ export const Searchbar = () => {
           onChange={(e) => setText(e.target.value)}
         />
         <img
-          src="./src/assets/search.png"
+          src="/assets/search.png"
           className={styles["search-icon"]}
           onClick={handleSearch}
         />
